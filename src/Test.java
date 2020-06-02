@@ -1,7 +1,11 @@
-import java.util.Scanner;
-
 public class Test {
     public static void main(String[] args) {
-        System.out.println(ReadFromUser.readSeason());
+        String seasonValueFromUser;
+        String seasonInfo;
+
+        seasonValueFromUser = Utils.readSeasonFromUser();
+        seasonInfo = Utils.getSeasonInfo(seasonValueFromUser);
+
+        System.out.println(seasonInfo);
     }
 }
